@@ -62,6 +62,14 @@ const routes = [
       title: 'Badge'
     }
   },
+  {
+    path: '*',
+    name: 'home',
+    component: HomeView,
+    meta: {
+      title: 'Home'
+    }
+  }
 ]
 
 const router = new VueRouter({

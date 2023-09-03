@@ -27,36 +27,17 @@
         :src="data.link"
       >
       </iframe>
-      <v-card-title
-        class="google-font pa-md-5 px-md-8"
-        style="background-position: right bottom"
-      >
-        <p
-          class="mb-0"
-          style="text-align: left;font-size:25px;font-weight:500;color:black'line-height:15px"
-        >
-          {{ data.title }} Details
-        </p>
-        <v-spacer></v-spacer>
-        <!-- <v-tooltip bottom>
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-              v-bind="attrs"
-              v-on="on"
-              fab
-              text
-              :to="'/schedule/' + data.id"
-              target="_blank"
-              ><v-icon>mdi-open-in-new</v-icon></v-btn
-            >
-          </template>
-          <span>View in New Tab</span>
-        </v-tooltip> -->
-      </v-card-title>
-      <v-card-text class="px-5 google-font mt-n8">
+      <v-card-text class="px-5 google-font mt-n0">
         <v-container fluid>
           <v-row>
+            
             <v-col md="12" cols="12">
+              <p
+              class="my-2 mt-3"
+              style="text-align: left;font-size:25px;font-weight:500;color:black'line-height:15px"
+            >
+              {{ data.title }} Details
+            </p>
               <p style="font-size: 110%">
                 <!-- <span class="mr-3">{{item.timeDuration}} Min</span> -->
                 <span v-if="data.date.length" class="mr-3"
@@ -108,31 +89,31 @@
                 >
                   <v-col class="pa-0 ma-0">
                     <v-list two-line subheader class="pa-0 ma-0 white">
-                        <v-list-item class="my-0 py-0">
-                          <v-list-item-avatar size="50">
-                            <img
-                              :src="getImgUrl(itemp.image)"
-                              class="image-wrapper"
-                            />
-                          </v-list-item-avatar>
-                          <v-list-item-content>
-                            <v-list-item-title
-                              class="google-font"
-                              style="font-size: 22px; font-weight: 500"
-                              >{{ itemp.name }}</v-list-item-title
-                            >
-                            <v-list-item-subtitle
-                              class="google-font text-wrap"
-                              style="font-size: 17px"
-                              v-if="itemp.company.designation"
-                            >
-                              {{ itemp.company.designation }}
-                              <span v-if="itemp.company.name">,</span>
-                              {{ itemp.company.name }}
-                            </v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
+                      <v-list-item class="my-0 py-0">
+                        <v-list-item-avatar size="50">
+                          <img
+                            :src="getImgUrl(itemp.image)"
+                            class="image-wrapper"
+                          />
+                        </v-list-item-avatar>
+                        <v-list-item-content>
+                          <v-list-item-title
+                            class="google-font"
+                            style="font-size: 150%; font-weight: 500"
+                            >{{ itemp.name }}</v-list-item-title
+                          >
+                          <v-list-item-subtitle
+                            class="google-font text-wrap"
+                            style="font-size: 105%"
+                            v-if="itemp.company.designation"
+                          >
+                            {{ itemp.company.designation }}
+                            <span v-if="itemp.company.name">,</span>
+                            {{ itemp.company.name }}
+                          </v-list-item-subtitle>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list>
                   </v-col>
                 </v-row>
               </v-container>

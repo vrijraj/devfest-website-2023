@@ -1,5 +1,5 @@
 <template>
-  <v-main>
+  <v-main class="my-md-10 my-0 px-3">
     <v-container fluid>
       <!-- Mobile -->
       <v-row>

@@ -18,6 +18,7 @@
         <v-btn
           icon
           class="mx-1"
+          target="_blank"
           :href="communityInfo.social_links.linkedin"
           v-if="communityInfo.social_links.linkedin.length"
         >
@@ -26,6 +27,7 @@
         <v-btn
           icon
           class="mx-1"
+          target="_blank"
           :href="communityInfo.social_links.twitter"
           v-if="communityInfo.social_links.twitter.length"
         >
@@ -34,6 +36,7 @@
         <v-btn
           icon
           class="mx-1"
+          target="_blank"
           :href="communityInfo.social_links.instagram"
           v-if="communityInfo.social_links.instagram.length"
         >
@@ -42,6 +45,7 @@
         <v-btn
           icon
           class="mx-1"
+          target="_blank"
           :href="communityInfo.social_links.facebook"
           v-if="communityInfo.social_links.facebook.length"
         >
@@ -50,6 +54,7 @@
         <v-btn
           icon
           class="mx-1"
+          target="_blank"
           :href="communityInfo.social_links.youtube"
           v-if="communityInfo.social_links.youtube.length"
         >
