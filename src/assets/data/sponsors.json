@@ -1,0 +1,48 @@
+[
+    {
+        "category_name": "Title Sponsors",
+        "sponsors": [
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            },
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            },
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            },
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            }
+        ]
+    },
+    {
+        "category_name": "Venue Sponsors",
+        "sponsors": [
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            },
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            },
+            {
+                "name":"Google For Developers",
+                "link": "https://developers.google.com",
+                "logo": "googlefordevelopers.svg"   
+            }
+        ]
+    }
+
+]

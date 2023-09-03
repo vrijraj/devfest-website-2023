@@ -1,16 +1,16 @@
 <template>
-    <v-container fluid style="background-color: white;border-radius: 15px" class="pa-5 pa-md-10">
-      <v-row>
-        <v-col class="text-center">
-          <p class="google-font gdg-h1 mb-4 grey--text text--darken-4">
+    <v-container fluid class="google-font">
+      <v-row justify="center" align="center"  class="px-2">
+        <v-col md="8" class="pa-10" style="background-color: white;border-radius: 15px" >
+          <p class="google-font gdg-h1 mb-2 grey--text text--darken-4">
             Stay updated on the products you love
           </p>
-  
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt fuga, architecto reprehenderit corporis necessitatibus! Eius quae voluptate provident iusto laudantium eum reprehenderit, officia aperiam odio et explicabo tenetur cupiditate.</p>
           <v-container fluid>
-            <v-row justify="center" align="center">
+            <v-row justify="start" align="start">
               <v-col md="1" sm="2" cols="3" v-for="(item, index) in techs" :key="index">
                 <a :href="item.link" target="_blank">
-                  <v-avatar color="white" size="70">
+                  <v-avatar color="white" size="60">
                     <v-img :src="item.logo"></v-img>
                   </v-avatar>
                 </a>
@@ -18,14 +18,24 @@
             </v-row>
           </v-container>
         </v-col>
+        <v-col md="4">
+          <div class="pa-10"  style="background-color: #D8F0FE;border-radius: 15px" >
+            <p style="font-size: 320%;font-weight: bold;line-height: 60px;">Join the Community of Developers </p>
+            <p style="font-size: 160%;">{{ communityInfo.community_name }}</p>
+
+            <v-btn rounded depressed :href="communityInfo.community_url" target="_blank" color="primary">Join Now</v-btn>
+          </div>
+        </v-col>
       </v-row>
     </v-container>
   </template>
   
   <script>
+  import communityJSON from "@/assets/data/community.json";
   export default {
     name: 'TechFocues',
     data: () => ({
+      communityInfo: communityJSON,
       techs: [
         {
           name: "Accessibility",
