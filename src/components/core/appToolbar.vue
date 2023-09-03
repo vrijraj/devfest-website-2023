@@ -1,12 +1,29 @@
 <template>
-  <v-app-bar flat fixed app class="px-md-5 px-0" color="white">
+  <v-app-bar
+    elevate-on-scroll
+    fixed
+    app
+    elevation="3"
+    class="px-md-5 px-0 mt-md-4 mt-sm-4 mt-0"
+    style="
+      background-color: white;
+      max-width: 1024px;
+      margin: auto;
+      border-radius: 15px;
+      -webkit-backdrop-filter: saturate(100%) blur(5px);
+      backdrop-filter: saturate(100%) blur(10px);
+    "
+  >
     <v-app-bar-nav-icon
       class="d-md-none d-lg-none"
       @click="toggleDrawer"
     ></v-app-bar-nav-icon>
 
     <v-toolbar-title class="mr-4 px-0 google-font">
-      <router-link to="/" style="text-decoration: none; font-size: 100%;color: black;">
+      <router-link
+        to="/"
+        style="text-decoration: none; font-size: 100%; color: black"
+      >
         DevFest India
       </router-link>
     </v-toolbar-title>
@@ -19,7 +36,7 @@
         class="mr-1"
         color="primary"
         to="/communities"
-        style="text-transform: none;font-size: 80%;font-weight: 500;"
+        style="text-transform: none; font-size: 80%; font-weight: 500"
         >Communities</v-btn
       >
       <v-btn
@@ -29,7 +46,7 @@
         class="mr-1"
         color="primary"
         to="/devfest"
-        style="text-transform: none;font-size: 80%;font-weight: 500;"
+        style="text-transform: none; font-size: 80%; font-weight: 500"
         >Find An Event</v-btn
       >
       <v-btn
@@ -39,7 +56,7 @@
         class="mr-1"
         color="primary"
         to="/badge"
-        style="text-transform: none;font-size: 80%;font-weight: 500;"
+        style="text-transform: none; font-size: 80%; font-weight: 500"
         >Badge</v-btn
       >
       <v-btn
@@ -49,7 +66,7 @@
         class="mr-1"
         color="primary"
         to="/cfp"
-        style="text-transform: none;font-size: 80%;font-weight: 500;"
+        style="text-transform: none; font-size: 80%; font-weight: 500"
         >CFP</v-btn
       >
       <v-btn
@@ -59,7 +76,7 @@
         class="mr-1"
         color="primary"
         to="/faq"
-        style="text-transform: none;font-size: 80%;font-weight: 500;"
+        style="text-transform: none; font-size: 80%; font-weight: 500"
         >FAQs</v-btn
       >
     </div>

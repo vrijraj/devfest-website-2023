@@ -9,13 +9,16 @@
     <!-- Overview -->
 
     <!-- Technologies -->
-    <technologiesVue class="my-15"/>
+    <technologiesVue class="mt-10"/>
     <!-- Technologies -->
 
     <!-- Sponsors -->
-    <sponsorsVue/>
+    <homesponsors class="mt-10"/>
     <!-- Sponsors -->
 
+    <!-- Social -->
+    <homeSocialVue class="my-10"/>
+    <!-- Social -->
   </v-main>
 </template>
 
@@ -23,8 +26,8 @@
 import heroVue from "@/components/home/hero.vue";
 import overviewVue from '@/components/home/overview.vue';
 import technologiesVue from '@/components/home/technologies.vue';
-import sponsorsVue from '@/components/home/sponsors.vue';
-
+import homesponsors from '@/components/home/homeSponsors.vue';
+import homeSocialVue from '@/components/home/homeSocial.vue';
 
 export default {
   name: "HomePage",
@@ -32,7 +35,8 @@ export default {
     heroVue,
     overviewVue,
     technologiesVue,
-    sponsorsVue
+    homesponsors,
+    homeSocialVue
   },
   data: () => ({
     

@@ -3,10 +3,12 @@
     "city": "Jakarta",
     "community_url": "https://gdg.community.dev/gdg-jakarta",
     "short_desc": "",
+    "community_hashtag":"GDGIndonesia",
     "social_links":{
-        "twitter":"",
-        "linkedin": "",
-        "instagram":"",
-        "facebook": ""
+        "twitter":"a",
+        "linkedin": "v",
+        "instagram":"x",
+        "facebook": "d",
+        "youtube": "e"
     }
 }
