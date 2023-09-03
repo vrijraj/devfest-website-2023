@@ -22,9 +22,10 @@
     <v-toolbar-title class="mr-4 px-0 google-font">
       <router-link
         to="/"
-        style="text-decoration: none; font-size: 100%; color: black"
+        class="text--secondary"
+        style="text-decoration: none; font-size: 100%;"
       >
-        DevFest India
+        {{ devfestInfo.name }}
       </router-link>
     </v-toolbar-title>
 
@@ -48,10 +49,12 @@
 </template>
   
   <script>
+import devfestJSON from "@/assets/data/devfests.json"
 import navbarJSON from "@/assets/data/navbar.json";
 export default {
   data: () => ({
     pages: navbarJSON,
+    devfestInfo: devfestJSON
   }),
   methods: {
     toggleDrawer() {
