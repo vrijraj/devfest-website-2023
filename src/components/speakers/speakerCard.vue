@@ -79,6 +79,8 @@
                   <v-row>
                     <v-col
                       md="6"
+                      sm="6"
+                      cols="12"
                       v-for="(itemp, index) in speakerSessions"
                       :key="index"
                     >
