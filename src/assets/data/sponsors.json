@@ -43,6 +43,16 @@
                 "logo": "googlefordevelopers.svg"   
             }
         ]
+    },
+    {
+        "category_name": "Template Partner",
+        "sponsors": [
+            {
+                "name":"TechFerment",
+                "link": "https://techferment.com",
+                "logo": "techferment.svg"   
+            }
+        ]
     }
 
 ]
