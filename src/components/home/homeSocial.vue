@@ -3,7 +3,7 @@
     <v-row justify="center" align="center" class="px-2 google-font">
       <v-col
         md="12"
-        style="background-color: #E8F1FB; border-radius: 15px"
+        style="background-color: #D8F0FE; border-radius: 15px"
         class="text-center pa-10"
       >
         <p class="google-font gdg-h1 mb-2 grey--text text--darken-4">

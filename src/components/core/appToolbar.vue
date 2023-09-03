@@ -30,63 +30,34 @@
 
     <div class="hidden-sm-and-down google-font">
       <v-btn
+        v-for="(page, index) in pages"
+        :key="index"
         rounded
         text
         small
         class="mr-1"
         color="primary"
-        to="/communities"
+        :to="page.path"
         style="text-transform: none; font-size: 80%; font-weight: 500"
-        >Communities</v-btn
-      >
-      <v-btn
-        rounded
-        text
-        small
-        class="mr-1"
-        color="primary"
-        to="/devfest"
-        style="text-transform: none; font-size: 80%; font-weight: 500"
-        >Find An Event</v-btn
-      >
-      <v-btn
-        rounded
-        text
-        small
-        class="mr-1"
-        color="primary"
-        to="/badge"
-        style="text-transform: none; font-size: 80%; font-weight: 500"
-        >Badge</v-btn
-      >
-      <v-btn
-        rounded
-        text
-        small
-        class="mr-1"
-        color="primary"
-        to="/cfp"
-        style="text-transform: none; font-size: 80%; font-weight: 500"
-        >CFP</v-btn
-      >
-      <v-btn
-        rounded
-        text
-        small
-        class="mr-1"
-        color="primary"
-        to="/faq"
-        style="text-transform: none; font-size: 80%; font-weight: 500"
-        >FAQs</v-btn
+        >{{page.name}}</v-btn
       >
     </div>
-
     <v-spacer></v-spacer>
   </v-app-bar>
 </template>
   
   <script>
 export default {
+  data: ()=>({
+    pages: [
+      { name: 'Home', path: '/' },
+      { name: 'Speakers', path: '/speakers' },
+      { name: 'Schedule', path: '/schedule' },
+      { name: 'Badge', path: '/badge' },
+      { name: 'Team', path: '/team' },
+      { name: 'FAQ', path: '/faq' },
+    ]
+  }),
   methods: {
     toggleDrawer() {
       this.$store.commit("TOGGLE_DRAWER");

@@ -11,29 +11,14 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/communities',
-    name: 'communities',
-    component: () => import(/* webpackChunkName: "communities" */ '../views/CommunitiesPage.vue')
-  },
-  {
-    path: '/devfest',
-    name: 'devfest',
-    component: () => import(/* webpackChunkName: "devfest" */ '../views/FindAnEventPage.vue')
-  },
-  {
-    path: '/cfp',
-    name: 'cfp',
-    component: () => import(/* webpackChunkName: "cfp" */ '../views/CFPPage.vue')
+    path: '/speakers',
+    name: 'speakers',
+    component: () => import(/* webpackChunkName: "speakers" */ '../views/SpeakersPage.vue')
   },
   {
     path: '/faq',
     name: 'faq',
     component: () => import(/* webpackChunkName: "faq" */ '../views/FAQPage.vue')
-  },
-  {
-    path: '/devfest/:id',
-    name: 'DevFestCommunityPage',
-    component: () => import(/* webpackChunkName: "DevFestCommunityPage" */ '../views/DevFestEventPage.vue')
   },
   {
     path: '/coc',
@@ -50,6 +35,9 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
   routes
 })
 

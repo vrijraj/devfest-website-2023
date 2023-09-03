@@ -3,7 +3,7 @@
     <v-row justify="center" align="center">
       <v-col md="12">
         <v-img
-          max-height="400"
+          max-height="380"
           style="border-radius: 15px"
           :src="require('@/assets/img/cover.png')"
         ></v-img>
