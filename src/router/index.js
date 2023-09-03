@@ -64,7 +64,7 @@ const routes = [
   },
   {
     path: '*',
-    name: 'home',
+    name: 'redirect-route',
     component: HomeView,
     meta: {
       title: 'Home'

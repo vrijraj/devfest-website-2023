@@ -4,11 +4,12 @@
     fixed
     app
     elevation="3"
-    class="px-md-2 px-0 mt-md-4 mt-sm-4 mx-sm-6 mt-0 mt-sm-0"
+    class="mt-md-4 mt-sm-4 mx-sm-6 mx-md-auto"
     style="
       background-color: white;
-      max-width: 1024px;
-      margin: auto;
+      max-width: 1200px !important;
+      margin-left: auto;
+      margin-right: auto;
       border-radius: 15px;
       -webkit-backdrop-filter: saturate(100%) blur(5px);
       backdrop-filter: saturate(100%) blur(10px);

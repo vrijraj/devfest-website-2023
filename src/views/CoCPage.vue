@@ -62,10 +62,7 @@ export default {
         des: "Keep off topic conversations to a minimum. Don’t be spammy by advertising or promoting personal projects which are off topic.",
       },
     ],
-  }),
-  created() {
-    document.title = "Code of Conduct | DevFest 2023";
-  },
+  })
 };
 </script>
 

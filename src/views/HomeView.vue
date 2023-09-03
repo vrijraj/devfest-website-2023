@@ -1,7 +1,7 @@
 <template>
   <v-main class="pa-0 ma-0">
     <!-- Hero -->
-    <heroVue class="my-md-5" />
+    <heroVue class="my-md-5 my-sm-5" />
     <!-- Hero -->
 
     <!-- Overview -->
@@ -41,8 +41,5 @@ export default {
   data: () => ({
     
   }),
-  created(){
-    document.title = "DevFest India 2023";
-  }
 };
 </script>

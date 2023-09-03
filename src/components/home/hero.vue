@@ -1,5 +1,6 @@
 <template>
   <v-container fluid class="my-0">
+    <!-- Row 1 -->
     <v-row justify="center" align="center">
       <v-col md="12">
         <v-img
@@ -9,8 +10,11 @@
         ></v-img>
       </v-col>
     </v-row>
-    <v-row justify="center" align="center" class="my-10">
-      <v-col md="8" cols="12" order-md="1" order="2" class="py-md-10">
+    <!-- Row 1 -->
+
+    <!-- Row 2 -->
+    <v-row justify="center" align="center" class="my-md-10 my-4">
+      <v-col md="8" cols="12" order-md="1" order-sm="2" class="py-md-10">
         <p
           class="google-font gdg-h1 mb-4 grey--text text--darken-4"
           style="font-size: 200%; line-height: 40px"
@@ -41,7 +45,7 @@
           >Register Now
         </v-btn>
       </v-col>
-      <v-col md="4" cols="12" order-md="2" order="1" class="google-font">
+      <v-col md="4" cols="12" order-md="2" order-sm="1" class="google-font">
         <v-container fluid class="px-0">
           <v-row>
             <v-col
@@ -63,6 +67,8 @@
         </v-container>
       </v-col>
     </v-row>
+    <!-- Row 2 -->
+
   </v-container>
 </template>
 

@@ -43,9 +43,6 @@ export default {
   data: () => ({
     faqsData: data,
   }),
-  created() {
-    document.title = "FAQ | DevFest India 2023";
-  },
 };
 </script>
 
