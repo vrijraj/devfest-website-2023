@@ -5,10 +5,10 @@ module.exports = defineConfig({
     'vuetify'
   ],
   pwa:{
-    name: "DevFest India 2023",
+    name: "DevFest 2023",
     themeColor: "#3D7FF5",
     msTileColor: "#3D7FF5",
-    short_name: 'DevFest India',
+    short_name: 'DevFest',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
   }
