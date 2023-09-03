@@ -15,6 +15,40 @@ Show some ❤️ and star the repo to support the project
 1. Update meta tags, Google Analytics and other info in `public/index.html` file.
 1. For the production: `npm run build` and then one dir will be created dist
 
+
+## Deployment on Firebase
+1. Install required tools for performing Firebase deployment
+    - Install Firebase CLI: `npm i -g firebase-tools`
+1. Login into Firebase CLI using the following command -  `firebase login`
+1. Open Terminal/CMD/Powershell in the root directory of your clone of the aura-admin repository.
+1. Now type `firebase login` command in your Terminal/CMD/Powershell
+1. Update the `Firebase Project ID` in `.firebasesrc` file. This value should match the project ID in your Project Settings of the Firebase project you created in the previous section.
+1. Go to the Firebase Console Dashboard and Click on Hosting in the left navigation.
+1. Click on Get Started
+1. Click through all steps till you’re taken to the Hosting page in the console.
+1. You’ll be provided with a ready domain with your project ID. It should look like - `<project-id>.web.app or <project-id>.firebaseapp.com`
+1. Copy the sub-domain name of the URL provided. In this case, it will be the project ID. However, to be precise, you have to copy the part before .web.aap or .firebaseapp.com. This is your Site ID
+1. Update `Firebase.json` file, set the site key to Site ID
+    ```js
+        {
+            "hosting": {
+                "site":"Your_Firebase_Hosting_id",
+                "public": "dist",
+                "rewrites": [ {
+                    "source": "**",
+                    "destination": "/index.html"
+                } ],
+                "ignore": [
+                    "firebase.json",
+                    "**/.*",
+                    "**/node_modules/**"
+                ]
+            }
+        }
+    ```
+1. In your terminal at the root directory of the project,  build and deploy using the following command     
+    - `firebase deploy`
+
 ## Features
 | Feature | Description |
 |---|---|
@@ -32,11 +66,24 @@ Show some ❤️ and star the repo to support the project
 * [Workbox](https://developers.google.com/web/tools/workbox)
 * [Google Cloud Platform](https://cloud.google.com/)
 
-### Project setup
-1. Clone the repo and `npm install`
-1. Compiles and hot-reloads for development use `npm run serve`
-1. Compiles and minifies for production use `npm run build`
-1. Lints and fixes files use `npm run lint`
+## Contributing
+
+Awesome! Contributions of all kinds are greatly appreciated. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
+
+### Using GitHub Issues
+
+- Feel free to use GitHub issues for questions, bug reports, and feature requests
+- Use the search feature to check for an existing issue
+- Include as much information as possible and provide any relevant resources (Eg. screenshots)
+- For bug reports ensure you have a reproducible test case
+ - A pull request with a breaking test would be super preferable here but isn't required
+
+### Submitting a Pull Request
+
+- Squash commits
+- Lint your code with eslint (config provided)
+- Include relevant test updates/additions
+- Pull requests _must_ be made against `develop` branch. Any other branch (unless specified by the maintainers) will get rejected.
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
@@ -52,3 +99,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## LICENSE
 Check out the developer [LICENSE](https://github.com/gdg-x/aura/blob/master/LICENSE)
+
+## Facing Any Problem or need any Help?
+Write us in [issues](https://github.com/vrijraj/devfest-website-2023/issues) section. Our team will try solve your issue within 10-12 hours.<br>
