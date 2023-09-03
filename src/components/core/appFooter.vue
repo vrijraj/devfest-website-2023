@@ -23,7 +23,7 @@
               </v-fab-transition>
               <h1
                 class="google-font mb-0"
-              >DevFest India 2023</h1>
+              >DevFest 2023</h1>
             </v-card-text> 
           </v-col>
         </v-row>
@@ -33,7 +33,7 @@
               rel="noreferrer"
               class="grey--text text--darken-3 mr-4 google-font"
               style="text-decoration:none;"
-            >DevFest India 2022</a>
+            >DevFest 2022</a>
             <br class="hidden-md-and-up">
             
             <a href="https://developers.google.com/community/gdg" target="_blank"
