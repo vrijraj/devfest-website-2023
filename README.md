@@ -99,7 +99,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 | GDG X| [View Now](https://gdg.community.dev) |
 
 ## LICENSE
-Check out the developer [LICENSE](https://github.com/gdg-x/aura/blob/master/LICENSE)
+Check out the developer [LICENSE](https://github.com/vrijraj/devfest-website-2023/blob/main/LICENSE)
 
 ## Facing Any Problem or need any Help?
 Write us in [issues](https://github.com/vrijraj/devfest-website-2023/issues) section. Our team will try solve your issue within 10-12 hours.<br>
