@@ -18,6 +18,7 @@
           <v-row>
             <v-col
               md="4"
+              sm="4"
               cols="12"
               v-for="(item, index) in devfestInfo.what_to_expect"
               :key="index"

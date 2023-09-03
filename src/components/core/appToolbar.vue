@@ -4,7 +4,7 @@
     fixed
     app
     elevation="3"
-    class="px-md-2 px-0 mt-md-4 mt-sm-4 mt-0"
+    class="px-md-2 px-0 mt-md-4 mt-sm-4 mx-sm-6 mt-0 mt-sm-0"
     style="
       background-color: white;
       max-width: 1024px;

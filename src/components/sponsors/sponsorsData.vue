@@ -9,6 +9,7 @@
       <v-col
         md="2"
         cols="6"
+        sm="3"
         class="text-center"
         v-for="(sponsor, indexp) in item.sponsors"
         :key="indexp"

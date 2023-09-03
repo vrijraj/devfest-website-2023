@@ -45,7 +45,7 @@
         <v-container fluid class="px-0">
           <v-row>
             <v-col
-              md="4" cols="4"
+              md="4" cols="4" sm="2"
               v-for="(item, index) in devfestInfo.stats.slice(0, 6)"
               :key="index"
             >
