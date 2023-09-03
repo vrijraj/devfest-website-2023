@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="google-font" >
     <v-row justify="center" align="center" class="px-2" >
-      <v-col md="12" class="pa-10" style="background-color: white; border-radius: 15px">
+      <v-col md="12" class="pa-md-10 pa-5" style="background-color: white; border-radius: 15px">
         <p
           class="google-font gdg-h1 mb-2 grey--text text--darken-4"
           style="font-size: 220%"
@@ -18,6 +18,7 @@
           <v-row>
             <v-col
               md="4"
+              cols="12"
               v-for="(item, index) in devfestInfo.what_to_expect"
               :key="index"
             >

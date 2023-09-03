@@ -1,0 +1,8 @@
+[
+    { "name": "Home", "path": "/", "visible": "1" },
+    { "name": "Speakers", "path": "/speakers", "visible": "1" },
+    { "name": "Schedule", "path": "/schedule", "visible": "1" },
+    { "name": "Badge", "path": "/badge", "visible": "1" },
+    { "name": "Team", "path": "/team", "visible": "1" },
+    { "name": "FAQ", "path": "/faq", "visible": "1" }
+]

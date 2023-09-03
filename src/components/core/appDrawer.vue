@@ -12,43 +12,24 @@
     <v-divider></v-divider>
 
     <v-list dense nav>
-      <v-list-item to="/" class="google-font my-0 py-0" color="blue">
-        <v-list-item-content>
-          <v-list-item-title>Home</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item to="/communities" class="google-font my-0 py-0" color="blue">
-        <v-list-item-content>
-          <v-list-item-title>Communities</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item to="/devfest" class="google-font my-0 py-0" color="blue">
-        <v-list-item-content>
-          <v-list-item-title>Find An Event</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item to="/badge" class="google-font my-0 py-0" color="blue">
-        <v-list-item-content>
-          <v-list-item-title>Badge</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item to="/faq" class="google-font my-0 py-0" color="blue">
-        <v-list-item-content>
-          <v-list-item-title>FAQ</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+      <template v-for="(page, index) in pages">
+        <v-list-item :to="page.path" class="google-font my-0 py-0" color="blue" :key="index">
+          <v-list-item-content>
+            <v-list-item-title>{{page.name}}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </template>
     </v-list>
   </v-navigation-drawer>
 </template>
   
   <script>
+import navbarJSON from "@/assets/data/navbar.json";
 export default {
   name: "AppDrawer",
-  data: () => ({}),
+  data: () => ({
+    pages: navbarJSON,
+  }),
   computed: {
     drawer: {
       get() {

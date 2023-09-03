@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="google-font">
       <v-row justify="center" align="center"  class="px-2">
-        <v-col md="8" class="pa-10" style="background-color: white;border-radius: 15px" >
+        <v-col md="8" class="pa-md-10 pa-5" style="background-color: white;border-radius: 15px" >
           <p class="google-font gdg-h1 mb-2 grey--text text--darken-4">
             Stay updated on the products you love
           </p>
@@ -19,7 +19,7 @@
           </v-container>
         </v-col>
         <v-col md="4">
-          <div class="pa-10"  style="background-color: #D8F0FE;border-radius: 15px" >
+          <div class="pa-md-10 pa-5"  style="background-color: #D8F0FE;border-radius: 15px" >
             <p style="font-size: 320%;font-weight: bold;line-height: 60px;">Join the Community of Developers </p>
             <p style="font-size: 160%;">{{ communityInfo.community_name }}</p>
 

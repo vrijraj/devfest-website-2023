@@ -22,7 +22,7 @@
         v-if="data.link"
         class="ma-0 pa-0"
         width="100%"
-        height="315"
+        height="415"
         style="border: none"
         :src="data.link"
       >
@@ -77,7 +77,7 @@
               >
                 Overview
               </p>
-              <p style="font-size: 17px; color: black; opacity: 0.9">
+              <p style="font-size: 105%; color: black; opacity: 0.9">
                 {{ data.description }}
               </p>
 

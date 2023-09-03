@@ -10,7 +10,7 @@
       </v-col>
     </v-row>
     <v-row justify="center" align="center" class="my-10">
-      <v-col md="8" cols="12" order-md="1" order="2" class="py-10">
+      <v-col md="8" cols="12" order-md="1" order="2" class="py-md-10">
         <p
           class="google-font gdg-h1 mb-4 grey--text text--darken-4"
           style="font-size: 200%; line-height: 40px"
@@ -44,7 +44,7 @@
         <v-container fluid class="px-0">
           <v-row>
             <v-col
-              md="4"
+              md="4" cols="4"
               v-for="(item, index) in devfestInfo.stats.slice(0, 6)"
               :key="index"
             >

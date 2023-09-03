@@ -29,34 +29,29 @@
     </v-toolbar-title>
 
     <div class="hidden-sm-and-down google-font">
-      <v-btn
-        v-for="(page, index) in pages"
-        :key="index"
-        rounded
-        text
-        small
-        class="mr-1"
-        color="primary"
-        :to="page.path"
-        style="text-transform: none; font-size: 80%; font-weight: 500"
-        >{{page.name}}</v-btn
-      >
+      <template v-for="(page, index) in pages">
+        <v-btn
+          rounded
+          text
+          small
+          :key="index"
+          class="mr-1"
+          color="primary"
+          :to="page.path"
+          v-if="page.visible == 1"
+          style="text-transform: none; font-size: 80%; font-weight: 500"
+          >{{ page.name }}</v-btn
+        >
+      </template>
     </div>
-    <v-spacer></v-spacer>
   </v-app-bar>
 </template>
   
   <script>
+import navbarJSON from "@/assets/data/navbar.json";
 export default {
-  data: ()=>({
-    pages: [
-      { name: 'Home', path: '/' },
-      { name: 'Speakers', path: '/speakers' },
-      { name: 'Schedule', path: '/schedule' },
-      { name: 'Badge', path: '/badge' },
-      { name: 'Team', path: '/team' },
-      { name: 'FAQ', path: '/faq' },
-    ]
+  data: () => ({
+    pages: navbarJSON,
   }),
   methods: {
     toggleDrawer() {
