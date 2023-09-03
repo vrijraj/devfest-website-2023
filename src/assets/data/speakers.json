@@ -13,8 +13,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": [1001, 1002]
+        }
     },
     {
         "id": "102",
@@ -30,8 +29,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     },
     {
         "id": "103",
@@ -47,8 +45,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     },
     {
         "id": "104",
@@ -64,8 +61,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     },
     {
         "id": "105",
@@ -81,8 +77,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     },
     {
         "id": "106",
@@ -98,8 +93,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     },
     {
         "id": "107",
@@ -115,8 +109,7 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     },
     {
         "id": "108",
@@ -132,7 +125,6 @@
             "linkedin": "asd",
             "twitter": "asd",
             "web": "asd"
-        },
-        "session_id": []
+        }
     }
 ]

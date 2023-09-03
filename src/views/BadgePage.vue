@@ -5,9 +5,9 @@
       <v-row>
         <v-col md="12" lg="12" class="d-block d-sm-block d-md-none px-0">
           <p class="google-font gdg-heading mb-0 grey--text text--darken-4">
-            DevFest India Badge
+            DevFest Badge
           </p>
-          <p class="my-0 mb-8 h1-subheading">
+          <p class="my-0 mb-8 h1-subheading google-font">
             Now that you are here, how about personalising your DevFest India
             2023 profile? Upload an image and generate a personalised badge with
             the DevFest India 2023 frame. Also share your image using
@@ -25,7 +25,7 @@
         >
           <div class="d-none d-sm-none d-md-block mb-10">
             <p class="google-font gdg-h1 mb-0 grey--text text--darken-4">
-              DevFest India Badge
+              DevFest Badge
             </p>
             <p class="google-font" style="font-size: 18px">
               Now that you are here, how about personalising your DevFest India
@@ -104,9 +104,8 @@
           cols="12"
           class="text-center py-md-10 py-5 order-md-2 order-sm-1 order-1"
           style="
-            background: #fafafa;
+            background: #e8f1fb;
             border-radius: 18px;
-            border: 1px solid #e0e0e0;
           "
         >
           <canvas class=""></canvas>

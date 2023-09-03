@@ -64,7 +64,7 @@ export default {
     ],
   }),
   created() {
-    document.title = "Code of Conduct | DevFest India 2023";
+    document.title = "Code of Conduct | DevFest 2023";
   },
 };
 </script>
