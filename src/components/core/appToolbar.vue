@@ -7,7 +7,7 @@
     class="mt-md-4 mt-sm-4 mx-sm-6 mx-md-auto"
     style="
       background-color: white;
-      max-width: 1200px !important;
+      max-width: 1024px !important;
       margin-left: auto;
       margin-right: auto;
       border-radius: 15px;
