@@ -2,7 +2,7 @@
 Standard Web App for DevFest's Events. <br>
 Show some ❤️ and star the repo to support the project
 
-![image](https://github.com/vrijraj/devfest-website-2023/assets/10599101/81123943-2213-4cc4-8447-eba178fa1163)
+![image](https://github.com/vrijraj/devfest-website-2023/assets/10599101/7664212e-969f-4ac6-b239-a4061ea24725)
 
 ## Getting Started
 1. Fork the repo
